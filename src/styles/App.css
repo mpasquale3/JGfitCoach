@@ -1,0 +1,90 @@
+/* src/styles/App.css */
+
+
+/* Prevent horizontal overflow on the whole page */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  margin: 0; /* Make sure there’s no default margin causing overflow */
+}
+
+* {
+  box-sizing: border-box; /* Always good practice */
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+.hero {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.about {
+  width: 100%;
+  overflow-x: hidden;
+  flex-wrap: wrap; /* important for flex panels */
+}
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/*========================= Services Section =================
+==============================================================*/
+.service-card {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-detail {
+  padding: 80px 20px;
+}
+
+.service-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+

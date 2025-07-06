@@ -1,0 +1,52 @@
+/* src/styles/Navbar.css */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box; /* crucial to keep padding inside the width */
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px; /* okay now, won't overflow */
+  z-index: 1000;
+}
+
+
+.navbar-logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #00FFAA; /* accent color when hovered */
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
