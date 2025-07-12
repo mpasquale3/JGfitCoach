@@ -27,3 +27,7 @@ This is a modern, mobile-friendly React website redesign for **JG Fit Coach**, b
 - Clean up home page
 - Decide on Booking vs Contact forms
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d622becba253627885f4ffd40d806e79ed2059e1
