@@ -1,0 +1,52 @@
+/* src/styles/PersonalTraining.css */
+
+.service-page {
+  overflow-x: hidden;
+}
+
+.service-hero {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.service-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%; width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* overlay for readability */
+}
+
+.service-hero h1 {
+  position: relative;
+  font-size: 3rem;
+  z-index: 1;
+}
+
+.service-detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.service-detail-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.service-detail-container li {
+  margin-bottom: 8px;
+}
+
+.service-detail-container h3 {
+  margin-top: 40px;
+}
+

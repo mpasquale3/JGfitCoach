@@ -1,12 +1,14 @@
+/* src/styles/Hero.css */
+
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh; /* takes up most of the viewport */
-  color: #fff;
+  height: 90vh;
   text-align: center;
-  position: relative;
-  overflow: hidden; /* ensures the image stays within bounds */
+  color: #fff;
+  overflow: hidden; /* ensures image stays inside bounds */
 }
 
 .hero-bg {
@@ -30,7 +32,7 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  margin-bottom: 200px;
+  margin-bottom: 200px; 
 }
 
 .hero-content h1 {
@@ -60,6 +62,7 @@
 
 @media (max-width: 768px) {
   .hero-content {
-    margin-bottom: 120px;
+    margin-bottom: 120px; /* mobile */
   }
 }
+

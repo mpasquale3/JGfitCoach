@@ -1,12 +1,17 @@
-/* Container for the three panels */
+/* src/styles/About.css */
+
 .about {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .about-panel {
   flex: 1;
+  min-width: 300px;
+  height: 500px;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -42,7 +47,7 @@
   margin-bottom: 15px;
 }
 
-/* Background images for each panel */
+/* specific background images */
 .about-panel.mission {
   background-image: url('../images/pose2.png');
 }
@@ -55,9 +60,16 @@
   background-image: url('../images/pose3.png');
 }
 
-/* Responsive: stack vertically on small screens */
+/* small screens */
 @media (max-width: 900px) {
   .about {
     flex-direction: column;
   }
+
+  .about-panel {
+    height: 400px;
+  }
 }
+
+
+

@@ -1,4 +1,6 @@
-.services {
+/* src/styles/Services.css */
+
+.services-page {
   padding: 80px 20px;
   background-color: #fff;
 }
@@ -9,7 +11,7 @@
   text-align: center;
 }
 
-.services-container h2 {
+.services-container h1 {
   font-size: 2rem;
   margin-bottom: 40px;
 }
@@ -20,9 +22,25 @@
   gap: 30px;
 }
 
-.service-card h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
+.service-card {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-decoration: none; /* removes underline */
+  color: inherit;
+  transition: transform 0.3s ease, border 0.3s ease;
+  display: block; /* makes entire card clickable */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  border: 2px solid #00FFAA; /* green accent on hover */
+}
+
+.service-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
 }
 
 .service-card p {
@@ -30,18 +48,4 @@
   line-height: 1.5;
 }
 
-.service-card {
-  background-color: #f9f9f9;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-  text-decoration: none; /* removes underline */
-  color: inherit; /* keeps text same color as parent */
-  display: block; /* makes the whole card clickable */
-}
 
-.service-card:hover {
-  transform: translateY(-5px);
-  border: 2px solid #00FFAA; /* Green outline on hover */
-}

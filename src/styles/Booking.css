@@ -1,3 +1,5 @@
+/* src/styles/Booking.css */
+
 .booking {
   padding: 80px 20px;
   background-color: #f9f9f9;
@@ -9,7 +11,7 @@
   text-align: center;
 }
 
-.booking-container h2 {
+.booking-container h1 {
   font-size: 2rem;
   margin-bottom: 40px;
 }
@@ -18,15 +20,17 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: left;
 }
 
 .booking-form label {
-  text-align: left;
   font-weight: bold;
 }
 
 .booking-form input,
-.booking-form textarea {
+.booking-form textarea,
+.booking-form select {
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -48,7 +52,6 @@
   background-color: #00cc88;
 }
 
-
 .booking-thankyou {
   padding: 40px;
   background-color: #e6ffe9;
@@ -64,3 +67,5 @@
 .booking-thankyou p {
   font-size: 1rem;
 }
+
+

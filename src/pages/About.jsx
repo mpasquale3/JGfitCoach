@@ -1,9 +1,11 @@
-import React from 'react';
-import '../styles/AboutSection.css';
+// src/pages/About.jsx
 
-const AboutSection = () => {
+import React from 'react';
+import '../styles/About.css'; 
+
+const About = () => {
   return (
-    <section id="about" className="about">
+    <section className="about">
       {/* Mission Panel */}
       <div className="about-panel mission">
         <div className="panel-content">
@@ -52,4 +54,6 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default About;
+
+

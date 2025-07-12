@@ -1,18 +1,19 @@
+
 /* src/styles/Navbar.css */
+
 .navbar {
   position: sticky;
   top: 0;
   width: 100%;
-  box-sizing: border-box; /* crucial to keep padding inside the width */
-  background-color: #111;
+  box-sizing: border-box; /* keep padding inside */
+  background-color: #111; /* dark vibe */
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px; /* okay now, won't overflow */
+  padding: 15px 40px;
   z-index: 1000;
 }
-
 
 .navbar-logo a {
   color: #fff;
@@ -31,11 +32,11 @@
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-  color: #00FFAA; /* accent color when hovered */
-  transition: color 0.3s ease;
+  color: #00FFAA; /* accent on hover */
 }
 
 @media (max-width: 768px) {
@@ -50,3 +51,4 @@
     margin-top: 10px;
   }
 }
+

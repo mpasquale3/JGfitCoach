@@ -1,39 +1,32 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import ServicesSection from './components/ServicesSection';
-import TestimonialsSection from './components/TestimonialsSection';
-import BookingSection from './components/BookingSection';
-import ContactForm from './components/ContactForm';
-import Footer from './components/Footer';
 
-// New detail pages
-import PersonalTraining from './components/PersonalTraining';
-import NutritionCoaching from './components/NutritionCoaching';
-import OnlinePrograms from './components/OnlinePrograms';
+import Home from './pages/Home';
+import About from './pages/About';
+import Services from './pages/Services';
+import PersonalTraining from './pages/PersonalTraining';
+import NutritionCoaching from './pages/NutritionCoaching';
+import OnlinePrograms from './pages/OnlinePrograms';
+import Testimonials from './pages/Testimonials';
+import Booking from './pages/Booking';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={
-          <>
-            <HeroSection />
-            <AboutSection />
-            <ServicesSection />
-            <TestimonialsSection />
-            <BookingSection />
-            <ContactForm />
-          </>
-        } />
-        <Route path="/personal-training" element={<PersonalTraining />} />
-        <Route path="/nutrition-coaching" element={<NutritionCoaching />} />
-        <Route path="/online-programs" element={<OnlinePrograms />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/services/personal-training" element={<PersonalTraining />} />
+        <Route path="/services/nutrition-coaching" element={<NutritionCoaching />} />
+        <Route path="/services/online-programs" element={<OnlinePrograms />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-      <Footer />
     </Router>
   );
 }

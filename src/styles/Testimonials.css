@@ -1,4 +1,6 @@
-.testimonials {
+/* src/styles/Testimonials.css */
+
+.testimonials-page {
   padding: 80px 20px;
   background-color: #f9f9f9;
 }
@@ -9,7 +11,7 @@
   text-align: center;
 }
 
-.testimonials-container h2 {
+.testimonials-container h1 {
   font-size: 2rem;
   margin-bottom: 40px;
 }
@@ -38,3 +40,5 @@
   font-weight: bold;
   margin: 0;
 }
+
+
