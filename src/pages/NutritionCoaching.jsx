@@ -5,10 +5,14 @@
 import React from 'react';
 import '../styles/NutritionCoaching.css';
 import heroImage from '../images/mealPrep.png'; 
+import { Link } from 'react-router-dom';
+
+
 
 const NutritionCoaching = () => {
   return (
     <div className="service-page">
+      <Link to="/services" className="back-button">← Back to Services</Link>
       <div 
         className="service-hero"
         style={{ backgroundImage: `url(${heroImage})` }}

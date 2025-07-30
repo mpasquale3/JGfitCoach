@@ -1,5 +1,301 @@
-/* src/styles/Services.css */
+/* src/styles/Services.css /*
 
+
+
+/* Overall Page Layout */
+.services-page {
+  text-align: center;
+  padding: 60px 20px;
+  background-image: url('../images/weights.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Main Title */
+.services-page h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* Optional Subtitle */
+.services-intro {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card Container */
+.service-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Individual Card */
+.service-card {
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  border-radius: 12px;
+  padding: 30px 20px;
+  width: 280px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  border: 1px solid #00FFAA;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Optional dark or soft overlay to improve text readability */
+.services-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* adjust for light wash or try 0.8 */
+  z-index: -1;
+}
+
+/* === Step-by-Step Process Section === */
+.process-section {
+  padding: 80px 20px 60px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.process-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.process-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.step {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* === Packages Section === */
+.packages-section {
+  padding: 80px 20px 60px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.packages-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.package-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.package-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.package-card p {
+  font-size: 1.1rem;
+  color: #00AA77;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.package-card ul {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+  color: #555;
+}
+
+.package-card ul li {
+  margin-bottom: 8px;
+}
+
+
+/* === Call to Action Section === */
+.cta-section {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #444;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #00AA77;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #008f66;
+}
+
+.cta-btn.secondary {
+  background-color: #333;
+}
+
+.cta-btn.secondary:hover {
+  background-color: #111;
+}
+
+
+/* === FAQ Section === */
+.faq-section {
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  text-align: left;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #111;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: #555;
+  padding: 10px 0 20px;
+  display: none; /* You can toggle this with JS or basic accordion logic */
+}
+
+.faq-question:focus + .faq-answer,
+.faq-question.open + .faq-answer {
+  display: block;
+}
+
+
+
+
+/*
 .services-page {
   padding: 80px 20px;
   background-color: #fff;
@@ -27,15 +323,15 @@
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  text-decoration: none; /* removes underline */
+  text-decoration: none; /* removes underline 
   color: inherit;
   transition: transform 0.3s ease, border 0.3s ease;
-  display: block; /* makes entire card clickable */
+  display: block; /* makes entire card clickable 
 }
 
 .service-card:hover {
   transform: translateY(-5px);
-  border: 2px solid #00FFAA; /* green accent on hover */
+  border: 2px solid #00FFAA; /* green accent on hover 
 }
 
 .service-card h2 {
@@ -49,3 +345,4 @@
 }
 
 
+*/

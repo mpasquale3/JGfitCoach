@@ -4,10 +4,13 @@
 import React from 'react';
 import '../styles/PersonalTraining.css';
 import heroImage from '../images/pose2.png'; //update image
+import { Link } from 'react-router-dom';
+
 
 const PersonalTraining = () => {
   return (
     <div className="service-page">
+      <Link to="/services" className="back-button">← Back to Services</Link>
       <div 
         className="service-hero"
         style={{ backgroundImage: `url(${heroImage})` }}
